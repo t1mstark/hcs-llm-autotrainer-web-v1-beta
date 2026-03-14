@@ -26,7 +26,7 @@ body {
 .status-cluster { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
 .grid { display: grid; gap: 10px; grid-template-columns: 1fr; }
 .left, .right, .center { min-height: 220px; }
-.right canvas { width: 100%; background: rgba(0,0,0,.25); border-radius: 8px; border: 1px solid var(--border); }
+canvas { width: 100%; background: rgba(0,0,0,.25); border-radius: 8px; border: 1px solid var(--border); margin:4px 0; }
 h2,h3,h4 { margin: 8px 0; }
 label { display: block; margin: 8px 0 5px; color: var(--muted); font-size: .9rem; }
 input, textarea, select, button {
@@ -69,6 +69,8 @@ textarea { resize: vertical; min-height: 80px; }
 .warnings { display: grid; gap: 6px; margin-top: 8px; }
 .warn { padding: 7px; border-radius: 8px; border: 1px solid rgba(244,192,77,.5); background: rgba(244,192,77,.12); }
 .compare-grid { display: grid; gap: 8px; grid-template-columns: 1fr; }
+#flowSteps .step{padding:8px;border:1px solid var(--border);border-radius:8px;background:rgba(0,0,0,.18)}
+#flowSteps .step.done{border-color:rgba(32,197,116,.8)}
 .compare-card { border-radius: 10px; border: 1px solid var(--border); background: rgba(0,0,0,.2); padding: 8px; }
 .compare-card.best { border-color: rgba(32,197,116,.8); box-shadow: inset 0 0 0 1px rgba(32,197,116,.7); }
 .chip-wrap { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
